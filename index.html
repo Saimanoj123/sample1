@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Comic Universe Hub</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>Comic Universe Hub</h1>
+    <nav>
+      <button onclick="showCategory('dc')">DC</button>
+      <button onclick="showCategory('marvel')">Marvel</button>
+      <button onclick="showCategory('fantastic')">Fantastic Four</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="dc" class="category active">
+      <h2>DC Heroes</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/3/35/Supermanflying.png" alt="Superman">
+          <h3>Superman</h3>
+        </div>
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/8/8a/Batman_Detective_Comics_Vol_1_1027_Textless.jpg" alt="Batman">
+          <h3>Batman</h3>
+        </div>
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/1/10/Wonder_Woman.jpg" alt="Wonder Woman">
+          <h3>Wonder Woman</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="marvel" class="category">
+      <h2>Marvel Heroes</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Iron_Man_bleeding_edge.jpg" alt="Iron Man">
+          <h3>Iron Man</h3>
+        </div>
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/5/5c/Captain_America_%28Ed_Brubaker%29.png" alt="Captain America">
+          <h3>Captain America</h3>
+        </div>
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/0/01/Spider-Man_%28Civil_War%29.jpg" alt="Spider-Man">
+          <h3>Spider-Man</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="fantastic" class="category">
+      <h2>Fantastic Four</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/0/00/Mr._Fantastic_%28Marvel_Comics_character%29.png" alt="Mr. Fantastic">
+          <h3>Mr. Fantastic</h3>
+        </div>
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/e/e0/SueStormFF2.png" alt="Invisible Woman">
+          <h3>Invisible Woman</h3>
+        </div>
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/3/3c/Human_Torch_%28Johnny_Storm%29.png" alt="Human Torch">
+          <h3>Human Torch</h3>
+        </div>
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/e/e3/The_Thing_%28Marvel_Comics_character%29.png" alt="The Thing">
+          <h3>The Thing</h3>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Comic Universe Hub. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
