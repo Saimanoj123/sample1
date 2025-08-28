@@ -1,0 +1,96 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #1c1c1e;
+  color: #ffffff;
+}
+
+header {
+  background-color: #121212;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav button {
+  background: #2c2c2e;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+nav button:hover {
+  background: #3a3a3c;
+}
+
+main {
+  padding: 20px;
+}
+
+.category {
+  display: none;
+  animation: fadeIn 0.6s ease-in;
+}
+
+.category.active {
+  display: block;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.card {
+  background: #2c2c2e;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 10px 0 0;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background: #121212;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
